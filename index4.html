@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style4.css">
+        <title>Frontend Mentor | Todo List</title>
+        <link rel="preconnect" href="https://fonts.google.com/specimen/Josefin+Sans">
+    </head>
+
+    <body class="dark-theme">
+        <header class="flex-row">
+        <h1>TODO</h1> 
+        <div class="theme-block">
+            <input name="theme" type="checkbox" id="theme">
+            <label for="theme"></label>
+        </div>
+        </header>
+        <main>
+            <div class="add-new-item">
+                <span></span>
+                <input type="text" placeholder="Create new items" name="addItem" id="addItem">
+            </div>
+
+            <section class="content">
+                <ul>
+                    <li class="flex-row">
+                        <label class="list-item">
+                            <input type="checkbox" name="item" >
+                            <span class="check-mark"></span>
+                            <span class="text">task1</span>
+                        </label>
+                        <span class="remove"></span>
+                    </li>
+                    <li>
+                        <label class="list-item">
+                            <input type="checkbox" name="item" >
+                            <span class="check-mark"></span>
+                            <span class="text">task2</span>
+                        </label>
+                        <span class="remove"></span>
+                    </li>
+                    <li>
+                        <label class="list-item">
+                            <input type="checkbox" name="item" >
+                            <span class="check-mark"></span>
+                            <span class="text">task3</span>
+                        </label>
+                        <span class="remove"></span>
+                    </li>
+                </ul>
+            </section>
+
+            <div class="bottom-item flex-row">
+                <div class="items-left"><span>2</span>items left</div>
+                <div class="filter flex-row">
+                    <label>
+                        <input type="radio" name="filter" id="all" checked>
+                        <span>All</span>
+                    </label>
+                    <label>
+                        <input type="radio" name="filter" id="active">
+                        <span>Active</span>
+                    </label>
+                    <label>
+                        <input type="radio" name="filter" id="completed" >
+                        <span>Completed</span>
+                    </label>
+                </div>
+                <span class="clear">Clear completed</span>
+            </div>
+        </main>
+        <script src="script4.js"></script>
+    </body>
+</html>
